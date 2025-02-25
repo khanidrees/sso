@@ -10,7 +10,7 @@ const Dashboard = () => {
     if(secret || localStorage.getItem('isLoggedIn')){//verified
         localStorage.setItem('loggedIn','true');
     }else{
-      window.location.href = "http://localhost:3000/";
+      window.location.href = "http://localhost:3000/?loginRequest=2";
     }
     
 
